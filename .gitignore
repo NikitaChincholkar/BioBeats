@@ -1,0 +1,12 @@
+# Raw extracted datasets & untracked large archives
+/data/
+eegmmidb-1.0.0.zip
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Node / Vite
+node_modules/
+dist/
+.DS_Store
