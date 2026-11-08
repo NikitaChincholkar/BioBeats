@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BioBeats</title>
+    <link rel="stylesheet" href="frontend.css">
+</head>
+
+<body>
+    <main class="card">
+        <div class="heart" aria-hidden="true">♥</div>
+        <h1>BioBeats</h1>
+        <p class="intro">
+            Welcome to BioBeats! This website was created to transform the biological sounds of your loved ones
+            into music that you can keep and cherish long past their passing. Like a photo, these snippets of
+            music act as mementos for you to remember those who have left this life.
+        </p>
+
+        <p id="status">Ready to play!</p>
+
+        <div class="controls">
+            <button id="startBtn">▶ Start</button>
+            <button id="pauseBtn" disabled>⏸ Pause</button>
+            <button id="restartBtn">↺ Restart</button>
+        </div>
+
+        <div class="volume-row">
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="100" value="70">
+            <span id="volumeLabel">70%</span>
+        </div>
+    </main>
+
+    <script src="frontend.js"></script>
+</body>
+
+</html>

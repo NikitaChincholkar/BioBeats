@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    background: linear-gradient(135deg, #cfe8ff, #f6dfeb);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    color: #2b3a4a;
+}
+
+.card {
+    background: white;
+    width: 90%;
+    max-width: 640px;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.intro {
+    line-height: 1.6;
+}
+
+/* The beating heart */
+.heart {
+    font-size: 3rem;
+    color: #e0577a;
+    animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    15%      { transform: scale(1.25); }
+    30%      { transform: scale(1); }
+    45%      { transform: scale(1.15); }
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+button {
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background-color: #e6e6e6;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.volume-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="range"] {
+    width: 50%;
+    accent-color: #e0577a;
+}
